@@ -1,0 +1,24 @@
+{
+  "name": "clash99-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clash99: no-wager reflex practice and smart-contract prototype",
+  "workspaces": [
+    "contracts",
+    "frontend"
+  ],
+  "scripts": {
+    "contracts:compile": "npm run compile --workspace=contracts",
+    "contracts:test": "npm run test --workspace=contracts",
+    "frontend:dev": "npm run dev --workspace=frontend",
+    "frontend:build": "npm run build --workspace=frontend"
+  },
+  "keywords": [
+    "reflex-practice",
+    "web3-prototype",
+    "solidity",
+    "nextjs"
+  ],
+  "author": "Clash99 Team",
+  "license": "MIT"
+}
