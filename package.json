@@ -1,24 +1,24 @@
 {
-  "name": "clash99-platform",
+  "name": "clash99-contracts",
   "version": "1.0.0",
   "private": true,
-  "description": "Clash99: no-wager reflex practice and smart-contract prototype",
-  "workspaces": [
-    "contracts",
-    "frontend"
-  ],
+  "description": "Clash99 Smart Contract Suite: Zero-Bankroll P2P Escrows & Stealth Treasury",
   "scripts": {
-    "contracts:compile": "npm run compile --workspace=contracts",
-    "contracts:test": "npm run test --workspace=contracts",
-    "frontend:dev": "npm run dev --workspace=frontend",
-    "frontend:build": "npm run build --workspace=frontend"
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "clean": "hardhat clean"
   },
-  "keywords": [
-    "reflex-practice",
-    "web3-prototype",
-    "solidity",
-    "nextjs"
-  ],
-  "author": "Clash99 Team",
-  "license": "MIT"
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.2",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5",
+    "solhint": "^6.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
 }
